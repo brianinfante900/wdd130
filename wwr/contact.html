@@ -40,16 +40,17 @@
 
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="booking"> Booking Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" id="booking" name="purpose" value="booking"> Booking Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
                     required></textarea>
 
-                <label><input type="checkbox" name="subscribe"> Subscribe me to the monthly newsletter</label>
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Subscribe me to the monthly newsletter</label>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -73,7 +74,7 @@
         <h2>Rafting Adventures</h2>
         <img src="images/Family_Rafting.jpg" alt="Rafting Scene 1">
         <img src="images/rafting.png" alt="Rafting Scene 2">
-        <img src="images/rsz_happyclient_raft.png" alt="Rafting Scene 3">
+        <img src="images/raft2.png" alt="Rafting Scene 3">
     </section>
 
     <!-- FOOTER -->
