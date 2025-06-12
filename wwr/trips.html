@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brian Infante">
+    <meta name="description" content="Contact page for White Water Rafting, providing information on how to reach us for inquiries, bookings, and suggestions.">
+    <title>Contact Us | WHITE WATER RAFTING</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <img src="images/raftlogo.png" alt="Raft Logo">
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-container" id="contact-container">
+         <h1>Contact White Water Rafting Experts at RaftingTours360</h1>
+
+        <!-- FORMULARY -->
+        <section class="contact-form" id="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" id="booking" name="purpose" value="booking"> Booking Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..."
+                    required></textarea>
+
+                <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe"> Subscribe me to the monthly newsletter</label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- INFO -->
+        <section class="contact-info" id="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>WHITE WATER RAFTING</strong></p>
+            <p>Phone: 899-925-4338</p>
+            <p>Email: <a href="mailto:support@rafting.com">support@rafting.com</a></p>
+
+            <div class="map" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- GALERY -->
+    <section class="images" id="images">
+        <h2>Rafting Adventures</h2>
+        <img src="images/Family_Rafting.jpg" alt="Rafting Scene 1">
+        <img src="images/rafting.png" alt="Rafting Scene 2">
+        <img src="images/raft2.png" alt="Rafting Scene 3">
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content" id="footer-content">
+            <p>&copy; 2025 RaftingTours360 | Brian Infante 🌴</p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/">
+                    <img src="images/rsz_facebookicon.png" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com/">
+                    <img src="images/rsz_ticktockicon.png" alt="TikTok">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="images/rsz_1instagramicon.png" alt="Facebook">
+                </a>
+            </div>
+            <p>
+             <a href="https://app.moqups.com/KztmCHsqOYFaUni45nKyULMPfUDb5CkP/view/page/ad64222d5" target="_blank">
+                Wirefire Wireframe
+            </a>
+                </p>
+        </div>
+    </footer>
+</body>
+
+</html>
